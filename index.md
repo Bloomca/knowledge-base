@@ -77,3 +77,7 @@ You can install packages locally by using relative path (absolute path will prob
 ```sh
 npm i ../library
 ```
+
+## Node speed
+
+Each node version is significantly faster than the previous one. I did not test every version, but 10 minutes job becomes becomes 8 minutes job after updating from node@8 -> node@10. So, in case of some slow CI job, long installations try to update Node version first.
