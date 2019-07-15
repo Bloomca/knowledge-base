@@ -61,3 +61,19 @@ After that, add this line to your `.zshrc` (not sure about regular bash):
 ```sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 ```
+
+## Node/NPM
+
+All executables are located in `node_modules/.bin`, like `node_modules/.bin/webpack`. You can execute it locally by one of those:
+
+```sh
+node node_modules/.bin/webpack
+npx webpack # npm@5+
+npm start # in package.json: "start": "webpack"
+```
+
+You can install packages locally by using relative path (absolute path will probably work too). Let's say that you have some library and your project on the same level. You can install it in your project by typing:
+
+```sh
+npm i ../library
+```
