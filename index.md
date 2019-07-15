@@ -51,3 +51,13 @@ If you want to remove a commit in the middle, the easiest way to do so is via [g
   - You can remove several of them, just count to the latest
 2. Do an interactive rebase with N commits back: `git rebase -i HEAD~5`
 3. It will open your editor, simply delete lines with commits you want to remove
+
+## Better history in terminal
+
+You can invoke a history in your terminal by pressing CTRL+r. Its interface is not the best, though, so you do improve it a lot by installing [https://github.com/junegunn/fzf].
+
+After that, add this line to your `.zshrc` (not sure about regular bash):
+
+```sh
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+```
